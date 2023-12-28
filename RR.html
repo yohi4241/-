@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" lang="js">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="RR.css">
+    <title>WEB電卓</title>
+</head>
+<body>
+  <h2>WEB電卓</h2>
+  <script src="RR.js"></script>
+  <table>
+    <tbody>
+      <tr>
+        <td colspan="4"><input type="text" id="display" disabled></td>
+      </tr>
+      <tr>
+        <td><button type="button" onclick="document.querySelector( 'input' ).value += '9'">9</button></td>
+        <td><button type="button" onclick="document.querySelector( 'input' ).value += '8'">8</button></td>
+        <td><button type="button" onclick="document.querySelector( 'input' ).value += '7'">7</button></td>
+        <td><button type="button" class="kigo" onclick="document.querySelector( 'input' ).value += '/'">÷</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" onclick="document.querySelector( 'input' ).value += '6'">6</button></td>
+        <td><button type="button" onclick="document.querySelector( 'input' ).value += '5'">5</button></td>
+        <td><button type="button" onclick="document.querySelector( 'input' ).value += '4'">4</button></td>
+        <td><button type="button" class="kigo" onclick="document.querySelector( 'input' ).value += '*'">×</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" onclick="document.querySelector( 'input' ).value += '3'">3</button></td>
+        <td><button type="button" onclick="document.querySelector( 'input' ).value += '2'">2</button></td>
+        <td><button type="button" onclick="document.querySelector( 'input' ).value += '1'">1</button></td>
+        <td><button type="button" class="kigo" onclick="document.querySelector( 'input' ).value += '-'">-</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" onclick="document.querySelector( 'input' ).value += '0'">0</button></td>
+        <td><button type="button" onclick="document.querySelector( 'input' ).value = ''">c</button></td>
+        <td><button type="button" onclick="kesan()" class="wa">=</button></td>
+        <td><button type="button" class="kigo" onclick="document.querySelector( 'input' ).value += '+'">+</button></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
